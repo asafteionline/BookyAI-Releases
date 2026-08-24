@@ -3,6 +3,11 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.6.5 — 2026-08-24
+
+- **What's new dialog**: click the version number in the sidebar to see what each release fixed and added — and when an update is waiting, its notes are shown before you install
+- Release notes for every version back to 1.5.0 are published and readable in the dialog
+
 ## 1.6.4 — 2026-08-24
 
 **Google Gemini — clearer failures, truthful model list**
