@@ -3,6 +3,32 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.7.0 — 2026-08-28
+
+**Codex — your book's story bible**
+- **Characters, world & knowledge the AI never contradicts**: structured character cards (age, personality, fears…), world entries (places, factions, objects, hard rules) and your own knowledge — paste notes or add .md/.txt files. Everything is sent with every chapter, regeneration, Extend with AI and the outline
+- **Extract from manuscript**: one click and the AI reads your chapters and drafts the character cards (your own edits are never overwritten) — works on imported books too
+- **AI character portraits** (uses your OpenAI or Gemini key, like covers)
+- **Open story threads**: the AI keeps a ledger of promises made to the reader — mysteries, looming conflicts — and honors them chapter after chapter; you can edit the list any time
+- **Point of view per chapter**: write any chapter strictly through a chosen character's eyes
+- **Consistency check**: the AI rereads your finished chapters against the story bible and flags contradictions ("her eyes were grey in chapter one…") — click a finding to jump straight to it in the editor
+- **Timeline**: the whole story so far, chapter by chapter — across a whole series
+
+**Book series**
+- **Plan a saga before the first word**: the new *Start a series* flow sets the name, premise, planned arc and writing style; every volume is generated knowing where the story is going
+- **Shared series codex**: characters and world travel across volumes; `{{f:key}}` names resolve in every book
+- **Previously in the series**: each new volume remembers what happened in the earlier ones — and inherits their unresolved story threads
+- Series shelves in the Library, a series workspace page, "Write the next book" pre-filled with the series style
+- The wizard can also start a series from any single book, and has a new optional **story bible** box — facts you type there shape the book from the very first outline
+
+**Book design**
+- **5 new interior designs**: Storyteller, Scholar, Romance, Noir — and **Ming**, made for Chinese/CJK books (Song/Ming typefaces, wide line spacing, true two-character indents)
+- **Custom design studio**: pick the fonts for titles, sub-headings and paragraphs (including Chinese typefaces), text size, line spacing, accent color, chapter openers, indents and drop caps — with a live page preview. Applies to PDF, EPUB, HTML and DOCX
+
+**Also**
+- *New Series* and *Extra Device* entries in the sidebar
+- Regenerating a chapter now remembers the plot of the chapters before it, not just their titles
+
 ## 1.6.6 — 2026-08-25
 
 - **License stability**: a momentary license-server problem could wrongly sign you out and demand your key again at every launch. Server hiccups now never touch your stored license — you get a 30-day offline grace instead — and error messages say what actually happened ("server problem, your key is fine") rather than implying your key is wrong
