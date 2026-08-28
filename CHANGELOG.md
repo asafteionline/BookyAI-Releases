@@ -3,6 +3,19 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.8.0 — 2026-08-28
+
+**Characters with real depth**
+- Character cards grow up: **profession**, **backstory**, **desires**, **struggles**, **secrets** and a **future arc** — secrets shape behavior in every scene but are never revealed until the story itself does it, and the future field is the destination the AI builds toward without rushing
+- **Relationship Network**: define who is what to whom — wife, boss, enemy, mentor… with nuance notes ("estranged for ten years") — and the AI keeps every interaction true to it
+- **Relationship map**: your cast drawn live — portraits in circles, directed arrows for every relation, zoom/pan — and a one-click **high-resolution PNG export** with the series title on top
+- **Extract from manuscript** now maps the cast AND the relationships in one click, professions and backstories included
+- **Arc milestones** (series): anchor character events to volumes — "gets sick and dies in Book 3", "marries in Book 4". Earlier books only foreshadow it, that volume makes it happen, and every later book treats it as permanent fact: a dead character stays dead
+
+**Tables, lists & structure (non-fiction)**
+- The AI may now use clean bulleted/numbered lists and tables where they serve the reader — and exports render them beautifully: book-grade table typography in PDF/EPUB/HTML, real Word tables and numbered lists in DOCX
+- **Structure button on every chapter**: tell the AI exactly which information to present and in what structure ("compare the 5 tools in a table; end with a checklist") — followed exactly, on generation and regeneration alike
+
 ## 1.7.0 — 2026-08-28
 
 **Codex — your book's story bible**
