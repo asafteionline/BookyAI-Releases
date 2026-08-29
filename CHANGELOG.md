@@ -3,6 +3,13 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.8.2 — 2026-08-28
+
+**Your work is safe now**
+- **Imported Word manuscripts bring their images along** — pictures arrive automatically into the book (with their alt text as captions), so nobody has to re-insert them one by one. Unsupported or oversized images are skipped with a clear note
+- **Vanished books come back**: a book whose internal data file was damaged (crash, full disk, antivirus) used to silently disappear from the Library while all its chapters, images and covers sat safely on disk. It now reappears automatically, rebuilt from its own files — nothing to re-do
+- **Deleting a book or series now moves it to the Recycle Bin / Trash** instead of removing it permanently — an accidental delete is no longer a catastrophe
+
 ## 1.8.1 — 2026-08-28
 
 **For novelists**
