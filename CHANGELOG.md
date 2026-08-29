@@ -3,6 +3,22 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.8.1 — 2026-08-28
+
+**For novelists**
+- **Heat level for romance** (1 Sweet → 5 Scorching), set in the wizard or Book details and enforced while writing — level 3 explicitly tells the AI that kisses aren't enough. Note: very explicit levels also depend on your AI provider's content policy; local Ollama models are the most permissive
+- **Narration control** for fiction: third person, first person, or **first person alternating between your two leads** — the alternation is enforced chapter by chapter for the whole book, no more drifting back to third person after chapter 3
+- **Story-craft outlines**: fiction outlines are now built like a novelist plans — three acts, escalating stakes, no episodic repetition — plus your genre's conventions (fair-play mystery clues and red herrings, romance beats to a satisfying ending, thriller pressure, consistent fantasy rules)
+- Chapter recaps now track **where each character is** at the chapter's end, so nobody teleports between chapters
+- **Romantic Suspense** is now listed under Romance too
+
+**Fixed**
+- **DOCX exports garbled from some chapter onward** on manuscripts imported from Word: invisible Word break characters corrupted the file and Word's "repair" mangled everything after them. Fixed at the source and at export — already-imported books heal automatically on their next DOCX export
+- **Image captions now appear in PDF, EPUB and HTML** (they only showed in DOCX) — styled like a book: italic, centered under the image, staying attached to floated images
+
+**BookyAI Audio**
+- **Search your books** in Create audio — plus an "Only books without audio" filter and an N-of-M counter, instead of arrow-only scrolling
+
 ## 1.8.0 — 2026-08-28
 
 **Characters with real depth**
