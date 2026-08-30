@@ -3,6 +3,18 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.8.3 — 2026-08-28
+
+**Regeneration can no longer destroy your work**
+- A failed chapter regeneration now **keeps your existing text untouched** — it no longer replaces a good chapter with a failure notice
+- Failures finally **tell you why**: the real error (API quota, key, network) is shown per chapter and in the final status, instead of a silent "pending"
+- **Chapter version history**: BookyAI now snapshots a chapter before every regeneration and before edits. The new *Versions* button in the chapter editor lists them — one click restores any previous version (and even restoring is reversible)
+
+**Fixed**
+- **DOCX garbled from the first image onward**: an imported image in a format Word can't decode (e.g. WebP) corrupted the export — such images are now converted automatically, at export and at import
+- The DOCX export now includes a real **Word table of contents** (hyperlinked; Word fills in the page numbers when you open the file)
+- **Word "Insert Caption" captions** are now recognized at import and attached to their image — centered under it in every export, instead of appearing as plain left-aligned text
+
 ## 1.8.2 — 2026-08-28
 
 **Your work is safe now**
