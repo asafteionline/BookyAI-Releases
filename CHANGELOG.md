@@ -3,6 +3,13 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.8.4 — 2026-08-31
+
+**Word import & export — verified against a real 26-chapter illustrated manuscript**
+- **Fixed the DOCX garbling for good**: pictures that were **bolded** in Word arrived in a form the exporter didn't recognize, so their raw data spilled into the document as endless text — that was the garbling AND the "Word not responding" stalls. Bolded and mid-sentence images now embed as real pictures, books that already imported them are healed automatically on their next export, and a safety net guarantees image data can never appear as text again
+- **Front matter finally has a home**: when importing a manuscript, every section now has a destination selector — Chapter, Preface, Introduction, Dedication, Prologue, Acknowledgments, Epilogue, Glossary, or Don't import. Front matter is detected and pre-filled from your section titles, lands in the book's editable matter pages, and **never shifts your chapter numbering or the table of contents**. Text before your first chapter heading is captured too, instead of silently disappearing
+- Title page, copyright and table-of-contents pages are suggested as "Don't import" — BookyAI regenerates them at export
+
 ## 1.8.3 — 2026-08-28
 
 **Regeneration can no longer destroy your work**
