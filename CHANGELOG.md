@@ -3,6 +3,18 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.8.5 — 2026-09-01
+
+**Choose your book's trim size — and never fix a stranded heading again**
+- **Trim sizes**: pick from eight standard print sizes in Book design — 5×8, 5.25×8, 5.5×8.5, A5, 6×9 (the default), 7×10, 8.5×11 and A4 — each with proper print margins. Your choice drives the PDF pages, the covers and the Word document exactly; images and layout scale to fit. EPUB and Kindle remain reflowable, as they should be
+- **Guaranteed formatting at any trim size**: a section heading can no longer be left as the last line of a page — headings always stay with the text that follows them, and no paragraph leaves a single lonely line at a page edge. This is enforced by the layout engine in both PDF and Word, so nothing needs manual placement
+- **Page preview**: a new button next to the trim selector renders your real print pages at the chosen size and opens them instantly — see exactly how the book lays out before exporting
+- **Re-check originality anytime**: chapters that already have an originality score now offer a *Re-check* button — after a rewrite or expansion, re-run the evaluation with one click (the book-wide check re-scores everything, as before)
+
+**Import & captions**
+- **Author comes from your Word file**: importing a manuscript now pre-fills the Author field from the document's own metadata — no more accidental "Anonymous" books (you can always override it in Book details)
+- **Manually-centered Word captions are now real captions**: a short italic line under a picture — how captions look when centered by hand in Word — is recognized as that picture's caption and rendered centered in PDF, EPUB, HTML and Word. Books that already imported such captions are healed automatically at export, no re-import needed
+
 ## 1.8.4 — 2026-08-31
 
 **Word import & export — verified against a real 26-chapter illustrated manuscript**
