@@ -3,6 +3,14 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.1 — 2026-09-01
+
+**Chapters that never retell the previous one**
+- Every chapter is now written with an explicit rule: begin where the previous chapter ended, and never re-narrate a scene, conversation, description or explanation the reader already has. Each chapter's continuity notes record exactly where it ends, so the next one picks up in the right place
+- **Non-fiction books get real memory**: BookyAI now keeps a ledger of what every chapter covered — points, examples, advice — and later chapters build on it instead of re-explaining it (previously only chapter titles were carried forward)
+- **Automatic repetition check**: after writing a chapter, BookyAI compares it with the previous one; if it repeats passages, the chapter is written again with the copied passages called out, and the less repetitive draft is kept. Applies to first generation and to regeneration
+- **Expand and Rewrite in the editor no longer borrow lines**: the AI now sees the text around your selection as off-limits rather than as a style sample, and a result that copies whole sentences from it is redone
+
 ## 1.9.0 — 2026-09-01
 
 **Your book, in every language — Editions**
