@@ -3,6 +3,23 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.0 — 2026-09-01
+
+**Your book, in every language — Editions**
+- **Translate a book chapter by chapter** into any of 60 languages from the new *Editions* card in the book workspace. Every edition is a full book of its own in your Library: export it, narrate it, polish it, design it — nothing is left out
+- **The editions map**: one row per language, one cell per chapter — translated, pending, failed, or flagged when you've edited the original since (re-translate just those chapters with one click). The map also shows which chapters already have **audio in each language**, with a direct jump to the Audio studio for that edition
+- **Translate at creation**: "Also translate into…" in the New Book and Import screens queues languages that start automatically as soon as the book is ready
+- Translation is careful by design: chapters translate in passages with continuity between them, character names from your Codex are kept, headings, images and captions are preserved, and a passage is only accepted when it is complete — a chapter is never replaced by a partial translation
+- **DeepL as a second engine**: add your DeepL API key in Settings (the free plan covers about one book a month) and pick DeepL per edition. Names are pinned through a glossary, and languages DeepL doesn't offer are translated by your AI provider instead — automatically
+
+**Addressing the reader — "Sie" or "du", "vous" or "tu"**
+- Books in a language with formal and informal address get a new option next to the language: Formal, Informal, or let the AI pick one. Whatever you choose is enforced in every sentence of every chapter — and in appendices, Extend, Polish, Rewrite and translations — so texts no longer switch back and forth. Existing books: set it once in Book details
+
+**Import & export polish**
+- A manuscript's original title page, copyright line and leftover "Table of Contents" heading are now recognized at import and suggested as "Don't import" — no more duplicate title blocks or a second table of contents in the DOCX
+- Captions written across several italic lines now become one centered caption; books imported earlier are healed automatically at export
+- Pictures without a caption are no longer shrunk in the PDF — they come out at full width, matching the Word export
+
 ## 1.8.5 — 2026-09-01
 
 **Choose your book's trim size — and never fix a stranded heading again**
