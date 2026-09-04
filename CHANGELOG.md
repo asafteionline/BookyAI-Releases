@@ -3,6 +3,22 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.2 — 2026-09-03
+
+**Reorder chapters**
+- A new Reorder button in the book workspace lets you drag chapters into a new order (or move them with arrows), preview the numbering, and apply. Chapter headings are renumbered automatically, and everything attached to a chapter moves with it: version history, originality and grammar reviews, references, story threads, the audiobook order and every translated edition. One atomic step, with a rollback if anything fails
+
+**Appendices**
+- The Introduction (and every other front or back matter section) no longer echoes Chapter 1. The AI now sees Chapter 1 only as a style sample it must not reuse, gets a summary of what the chapters cover instead, and a section that still repeats Chapter 1 is written again automatically
+- Edit appendices like chapters: a visible Edit button next to each section opens it in the full editor, with AI rewrite, version history, image insertion and a "Regenerate section" button that rewrites only that section
+
+**Your book remembers its AI engine**
+- Books now keep the AI engine they were created with (OpenRouter, Claude, Grok, Gemini or Ollama), and every later operation uses it: regeneration, appendices, references, Quality checks, the editor's AI tools, Codex and translations. Change it any time in Book details under "AI engine for this book". Error messages now name the engine that actually failed instead of pointing at Gemini
+
+**Fixed**
+- Tables written a little loosely by the AI (a column mismatch, an unusual divider row, or a table right after a list) now render as real tables in EPUB, Kindle, PDF and HTML instead of a row of pipes and dashes
+- The Originality panel in the workspace now opens the Quality review, and the header button is labelled "Quality review", so the originality and grammar checks are easy to find for imported books too
+
 ## 1.9.1 — 2026-09-01
 
 **Chapters that never retell the previous one**
