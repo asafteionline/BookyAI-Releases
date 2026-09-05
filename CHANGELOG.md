@@ -3,6 +3,19 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.3 — 2026-09-03
+
+**Appendices that keep up with your chapters**
+- When chapters are added, regenerated or reordered, BookyAI now flags the appendices and references as out of date and offers to regenerate them with one click, so endnotes, glossary and discussion guide always describe the current book. Every written chapter now gets its continuity summary (imported manuscripts get theirs on demand), and a full regeneration only rewrites sections BookyAI wrote itself: a preface you imported or wrote by hand is never overwritten
+- Front and back matter can be generated for imported manuscripts too: open the book and click Generate appendices
+
+**No more name-dropping, no more invented sources**
+- Appendices no longer open with "I, [author], along with [publisher]". Names appear only where a printed book carries them (a preface signature, acknowledgments), at most once, and two new tickboxes in Book details let you decide whether the author and the publisher may be mentioned at all
+- Further Reading and Endnotes may only cite works that genuinely exist; anything attributed to your own publisher or to you as a source is removed automatically. The references generator follows the same rule
+
+**Fixed**
+- Bold lines or a sub-heading placed right under a chapter title no longer vanish from PDF, EPUB and other exports
+
 ## 1.9.2 — 2026-09-03
 
 **Reorder chapters**
