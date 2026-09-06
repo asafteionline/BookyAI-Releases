@@ -3,6 +3,20 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.4 — 2026-09-07
+
+**Your hand-written appendices stay yours**
+- Regenerate appendices now shows a confirmation first: exactly which sections will be rewritten, which are written for the first time, and which are kept as they are. Sections you edited by hand after BookyAI wrote them are kept by default, with a tickbox to include them on purpose
+- Before a full regeneration, every current section is copied to an "appendices-backup" folder inside the book folder (one file per section), so the originals can be opened outside the app. The previous text also stays in each section's Versions
+
+**Ollama with thinking models (Qwen 3, Gemma 4 and friends)**
+- Thinking is now off by default for Ollama: reasoning tokens counted against the output budget, so short edits came back as "Empty Ollama response" and a chapter could take hours on local hardware. A new tickbox in Settings lets thinking models think if you want that
+- New "Ollama context window" setting: Automatic, Ollama's own setting (BookyAI sends no context size, so a daemon you run at 128k is never reloaded), or a fixed size from 8k to 128k
+- A model that spends its whole budget reasoning now gets a clear message instead of "Empty Ollama response", and a large model still loading is no longer reported as "not reachable"
+
+**Fixed**
+- Third-person narration is now enforced. Books set to third person, or fiction with no choice, received no narration instruction at all, so a memoir-like topic could pull the whole book into first person. A per-chapter viewpoint character no longer forces first person either
+
 ## 1.9.3 — 2026-09-03
 
 **Appendices that keep up with your chapters**
