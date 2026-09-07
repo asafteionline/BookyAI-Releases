@@ -3,6 +3,15 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.5 — 2026-09-08
+
+**BookyAI Audio on Intel Macs**
+- The narration engine never started on Intel Macs: the Intel build was missing one native image library the engine loads at startup, so every voice preview or render ended with "Narration engine failed to start". The library is now included in the Intel build, and the release pipeline checks both Mac builds for it. Update to 1.9.5, then preview a voice again; the engine downloads as usual on first use
+- If the engine ever fails to start again, the message now names the cause (exit code or signal and the error line) instead of a bare "failed to start"
+
+**Fixed**
+- The Test button next to the OpenRouter and Grok keys reported "Empty response" on a valid key when a reasoning model was selected: the tiny test request left the model no room to answer after thinking. The test now uses a proper allowance, a reasoning-only reply counts as a pass, and a model that spends its whole allowance thinking gets a message that says so instead of "Empty response"
+
 ## 1.9.4 — 2026-09-07
 
 **Your hand-written appendices stay yours**
