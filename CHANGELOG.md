@@ -3,6 +3,24 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.7 — 2026-09-09
+
+**Change a book's voice after creation**
+- A new Voice card in the book workspace lets you change the writing style and tone at any time, hear a short sample in the new voice, and either regenerate chapters one by one or rewrite all of them in the new voice with one click. Every chapter's previous text stays in its Versions
+
+**Word export finally looks like the book**
+- DOCX exports now follow the book's design: the template's font (one Word actually has), text size, line spacing, justified paragraphs, first-line indents, chapter openers with the chapter kicker and ornament, and proper heading styles, instead of Word's flat defaults
+
+**Covers: describe the cover you want**
+- Both the book's cover card and the Cover Studio have an "Art direction" choice: leave it to BookyAI as before, or switch to "My prompt" and describe the cover in your own words. Your description replaces BookyAI's genre art direction (a tickbox keeps it as secondary guidance), while the title, author name and the technical cover rules stay automatic. "View prompt" shows exactly what was sent, and the prompt is saved with the book for Redo
+
+**Bring your own manuscript into a series**
+- When importing a manuscript you can make it the next book of an existing series or start a new series with it, and each series page has an "Import a manuscript as Book N" button. Right after, BookyAI prepares the story so far (a continuity summary per chapter) and, for fiction, maps the characters into the series codex, so the next AI-written volume continues your book instead of only knowing its chapter titles. Standalone books can now also join an existing series from the Series card
+
+**Fixed**
+- PDF page numbers sat 0.23 inches from the bottom edge, inside the zone where Amazon KDP allows no text, so uploads were flagged. They now sit about 0.48 inches from the edge on every trim size
+- A full-page image with a caption no longer leaves a nearly blank page after it in PDF and ebook exports
+
 ## 1.9.6 — 2026-09-08
 
 **Authors page: pen names, bios and imprints as profiles**
