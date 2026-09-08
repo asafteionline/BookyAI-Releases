@@ -3,6 +3,22 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.6 — 2026-09-08
+
+**Authors page: pen names, bios and imprints as profiles**
+- A new Authors page in the sidebar holds one profile per pen name or imprint: author name, bio, photo, publisher name, logo and legal notice. Pick the profile when you create or import a book, or switch it any time in Book details; the exported book takes its copyright page, logo and About the Author page from it. Profiles can be duplicated, one is the default for new books, and a profile in use cannot be deleted by accident. Your current settings became the first profile automatically
+
+**Choose which appendices to write**
+- Ticking "Generate appendices" in the wizard now shows the twelve sections with a tickbox each, and only the ticked ones are written: fewer sections, less time, fewer tokens. The same tickboxes appear when you generate or regenerate appendices later, preselected with your choice for that book
+- The "Include in book" ticks in the workspace are now saved with the book, so they stay as you left them through edits, reloads and restarts
+
+**Chapters follow their own beats**
+- Each chapter is now written from its own outline beats, marked as binding, with the following chapters declared off-limits, so a chapter no longer runs ahead into the events of the next ones. The per-chapter "Structure" button is now "Instructions" and covers plot beats and scenes as well as lists and tables
+- Every chapter now shows which AI engine and model wrote it. When the free chain has to fall back from Gemini to Ollama, the chapter is flagged and the progress bar says so
+
+**Fixed**
+- Code blocks in technical books: a clean-up pass was removing the indentation from code, and exports had no styling for code, so long lines ran over the page in ebook readers. Code keeps its indentation, wraps inside a shaded monospace box in EPUB, PDF, Kindle and HTML, and Word exports get proper code paragraphs. Chapters generated before this update need to be regenerated or have their code pasted back
+
 ## 1.9.5 — 2026-09-08
 
 **BookyAI Audio on Intel Macs**
