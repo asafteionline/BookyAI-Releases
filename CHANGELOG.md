@@ -3,6 +3,14 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.8 — 2026-09-09
+
+**Word export, same as the preview**
+- Bold and italic nested inside each other, backslash escapes, inline code and typographic quotes now come out in DOCX exactly as the Page preview shows them. Three asterisks (or dashes) on their own line become a scene-break rule instead of literal asterisks, and quoted lines come out indented in italics
+
+**Import: replace the file in place**
+- Picked the wrong or an outdated manuscript? A "Replace file" button next to the file name swaps the chapter list for the new file while everything you filled in stays: author, genre, language, profile, series and translations. The title follows the new file unless you typed your own
+
 ## 1.9.7 — 2026-09-09
 
 **Change a book's voice after creation**
