@@ -3,6 +3,13 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.9 — 2026-09-10
+
+**Word export: same paragraphs, same spacing as the preview**
+- Consecutive lines now stay in one paragraph with a line break, and only a blank line starts a new paragraph, exactly as the Page preview and the PDF do. Earlier versions made every line its own paragraph, which added space between everything
+- Scene-break rules (three asterisks or dashes on their own line) now span the full text width like the preview, with tighter spacing
+- A heading marker on an empty line (for example "##" used as a spacer) is rendered as a gap, not printed as text
+
 ## 1.9.8 — 2026-09-09
 
 **Word export, same as the preview**
