@@ -3,6 +3,13 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.10 — 2026-09-10
+
+**Word export: chapters that Kindle Create recognises**
+- Each chapter opener is now a single heading that holds "Chapter N" and the title together and carries its own page break. Kindle Create (and Word's navigation pane) now see one numbered chapter per chapter, instead of "Chapter 1" stranded alone on a page and the title on the next page without its number
+- No stray page-break paragraphs remain in the file, so importing into Kindle Create no longer produces blank pages. Full-page images still start on their own page
+- Sub-headings inside chapters are left-aligned and only a step above the body size, so Kindle Create's "Suggested Chapter Titles" stops offering every sub-heading as a chapter
+
 ## 1.9.9 — 2026-09-10
 
 **Word export: same paragraphs, same spacing as the preview**
