@@ -3,6 +3,12 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.11 — 2026-09-10
+
+**Word export: a clean chapter list in Kindle Create**
+- The title page (title, subtitle, author) and the Contents heading no longer appear in Kindle Create's "Suggested Chapter Titles" after importing the DOCX. Only your chapters and front and back matter sections are offered, verified against Kindle Create 1.114
+- The title page keeps its look, with a small ornament between the subtitle and the author name
+
 ## 1.9.10 — 2026-09-10
 
 **Word export: chapters that Kindle Create recognises**
