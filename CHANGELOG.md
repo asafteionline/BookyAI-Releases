@@ -3,6 +3,12 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.12 — 2026-09-11
+
+**Audiobook: no more duplicate tracks after the section list changes**
+- If a section was added or switched on before the Prologue after your first render, re-rendering chapters could leave the old Prologue and Epilogue rows at their previous track numbers next to the new ones, with the old files still in the folder. Sections are now recognised by what they are, not by their position: a moved section is re-mastered from its cached narration under the right track number, file name and tags, and files that no longer belong to any track are removed after every render
+- "Start fresh" now rebuilds the track list from the book's current sections immediately, instead of after the next render
+
 ## 1.9.11 — 2026-09-10
 
 **Word export: a clean chapter list in Kindle Create**
