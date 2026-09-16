@@ -3,6 +3,15 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.13 — 2026-09-16
+
+**BookyAI Audio: files that pass ACX's loudness check**
+- ACX measures loudness (RMS) over the whole file, pauses included, while earlier versions measured and reported only the spoken parts. A chapter could show -20 dB in the app and read -24 dB for ACX ("RMS is too low"). Every chapter is now finished on the same measure ACX uses and lands between -23 and -18 dB with a safety margin; the RMS chip next to each chapter shows that whole-file value. Re-render existing chapters (or Start fresh and Render) to apply
+
+**OpenRouter: free, discounted and paid models, with prices**
+- The OpenRouter model picker in Settings and in the book wizard is now grouped: OpenRouter Auto, then Free, then Discounted right now, then all other models A to Z, each with its input and output price per one million tokens. Under the picker you see the price of the chosen model and an estimated cost for a 50,000-word book
+- New "OpenRouter fallback model": a second OpenRouter model that takes over when your main one fails mid-book (rate limit, empty answer, outage), before the Gemini rotation. Each chapter shows which model wrote it
+
 ## 1.9.12 — 2026-09-11
 
 **Audiobook: no more duplicate tracks after the section list changes**
