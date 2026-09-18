@@ -3,6 +3,31 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.14 — 2026-09-18
+
+**New add-on: BookyAI Listen, Speech to Book**
+- A new Listen page turns podcasts, interviews, lectures, coaching calls, voice memos and videos into clean transcripts with time stamps, on your own computer. Nothing is uploaded, and there is no per-minute cost. Add files (MP3, WAV, OGG, FLAC, M4A, M4B audiobooks, MP4, MOV and more), a whole folder, a podcast feed with an episode picker, a direct audio link, a public YouTube link, or record straight from the microphone. 99 languages, detected automatically
+- Every transcript is filed in the Codex of the book or series you choose, as a knowledge source the AI writes from. With the AI clean-up on, fillers and false starts are removed, punctuation is fixed, and each recording gets a summary, key points, quotable lines with their minute, and chapters. The word-for-word transcript is always kept next to the cleaned one
+- A transcript viewer with a synced player: click any paragraph to hear it, the current paragraph lights up while it plays. Export as TXT, DOCX, SRT or VTT
+- "Write a book from these": tick finished recordings and the wizard plans the outline around them. Each chapter is written from the passages that match it and cites the recording and the minute, for example (Episode 12, 14:05). Any book whose Codex contains recordings now writes from them the same way; a tickbox in the Codex turns the citations off
+- "My recording" or "Research source": your own recordings are written from freely, in your words. Someone else's video or podcast is research: the book learns the subject from it, credits the facts, and is written in your own words, angle and structure, never reproducing the source. Links are filed as research sources by default; switch it in the transcript viewer or in the Codex
+- Built for long recordings: a 16-hour M4B audiobook went through in one go, 122,000 words, transcribed and cleaned in about an hour and three quarters on a recent Mac. Very long recordings are filed as parts of up to three hours, each with its own summary and chapters, so nothing is cut off
+- Two engine sizes in Settings (Standard for the best accuracy, Fast for older computers), an option to pin the spoken language, and a button to free the disk space used by the engine
+- BookyAI Listen is a paid add-on (monthly, yearly or lifetime). If you bought it with your BookyAI account it unlocks by itself; otherwise enter its key on the Listen page
+
+**Thinking models on OpenRouter and Grok write the whole book**
+- Models that reason before they answer (GLM, DeepSeek R1, Grok and many others) spend output tokens thinking, and those tokens counted against the chapter budget. A chapter could come back empty, be treated as a failure and be written by the Gemini rotation instead. These models now get room to think on top of the chapter budget, an answer that was all thinking is retried on the same model before anything else is tried, and slow models get more time: 20 minutes for an answer, and a streamed answer runs as long as the model keeps sending data
+- New setting "If my engine fails": "Continue with another engine" (the default, as before) or "Stay on my engine". With "Stay on my engine" BookyAI never switches engines: yours is tried again after a pause, a chapter that still fails is marked as failed, the book moves on, and the failed chapters get one more pass at the end
+
+**A book whose outline failed can be started again**
+- When the outline request failed (a rejected key, an outage), the book page kept showing "Generating outline…" although nothing was running, and there was no way to start it again. The page now says the outline was not generated, keeps the reason even after a restart, and offers "Generate the outline", which starts the same book again with your Codex, author notes and series untouched
+
+**Settings: Test checks the key you typed**
+- The Test button checked the key that was already saved, so a freshly pasted key that had not been saved yet could be reported as "API key not valid". Test now saves the key in the field first, then checks it, and a field that holds an unsaved key says so
+
+**Series: rename a series**
+- The series name on the Series page is now editable: click the pencil next to it, type the new name and save
+
 ## 1.9.13 — 2026-09-16
 
 **BookyAI Audio: files that pass ACX's loudness check**
