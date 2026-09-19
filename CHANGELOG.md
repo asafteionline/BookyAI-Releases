@@ -3,6 +3,48 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.15 — 2026-09-19
+
+**New: a back-of-book index**
+- A new Index page (the "Index" button at the top of a book) builds the alphabetical index readers expect at the end of a non-fiction book: people, places, organisations, works, events and ideas, with where each one is discussed. BookyAI reads the book the way a professional indexer would and proposes the headings, with people filed family name first and every wording the text uses for them. A heading the book does not contain never reaches the list, and the subject of the whole book is switched off, as an index never lists it. People and places from your Codex are included for free
+- You stay the editor: search and filter the headings, see how often and in which chapters each one is mentioned, rename it, teach it another wording, file it under a broader heading ("taxes: deductions"), merge two headings, add "See also" links, or add a heading of your own and see its mentions at once. Every mention is shown in context, and a click opens the editor on that passage. A preview shows the index as it prints
+- It is never out of date: where each heading occurs is worked out from your text at every export. Edit, add or reorder chapters and the index follows. When you add chapters, "Read new chapters" looks at those only and keeps every decision you made
+- In the PDF the index prints real page numbers, each one a link to the passage, in two columns with letter headings and subentries. Word gets a native index that Word itself keeps up to date (choose Yes when Word offers to update the fields). EPUB links every entry to the passage; Kindle and Markdown list the chapters. The index sits last in the book, appears on the contents page, and can be unticked or moved under "Include in book"
+
+**Front and back matter: the publishing order, and your own**
+- The front matter now follows the publishing standard: Dedication before the contents page, then Preface, Acknowledgments, Introduction and Prologue. Existing books get this order at their next export
+- Under "Include in book" every section has a drag handle and arrows: arrange the front matter and the back matter in any order you like. The contents page is part of that list, so you decide where it sits in PDF, Word and HTML. "Standard order" puts everything back
+- Three new sections: Epigraph, Foreword and Author's Note. A foreword is written by someone else and an epigraph is a quotation, so BookyAI never writes those two: add them from "Add your own" and paste or type the text. The Author's Note can be written by the AI, and only when you tick it. An imported manuscript's Foreword, Epigraph and Author's Note now land in their own sections
+- Acknowledgments and the Author's Note can go after the chapters, as fiction usually has them: move them across the "Chapters" line with the arrows or by dragging
+- The card, the dialog and the wizard now say "Front & back matter" instead of "Appendices"
+
+**Front and back matter in the manuscript list, with instructions**
+- The Preface, Introduction, Glossary and the other sections now appear in the manuscript list, above and below the chapters, with the same three actions a chapter has: Instructions, Edit and Regenerate
+- Instructions are new for these sections: tell the AI exactly what a section must contain and in what structure ("only the 20 most important terms, as a table"). They are followed the next time the section is generated or regenerated; saving them changes nothing by itself
+
+**Editor: a formatting toolbar**
+- Familiar icons above the editor: Bold, Italic, Underline, Heading, Bulleted list, Numbered list, Quote, Center, Align right, Scene break, Undo and Redo. Select the text and click; click again to remove it. Cmd/Ctrl+B, I and U work too. A few words selected inside a paragraph and then Heading or Quote become a heading or a quotation of their own
+- Underline, centred and right-aligned paragraphs are new and come out in every format: PDF, EPUB, Word, Kindle and HTML. The alignment of ordinary paragraphs still comes from your book's design
+
+**Editorial review: real errors, exact fixes**
+- The proofread now separates real errors (grammar, spelling, punctuation) from optional style suggestions, and only errors count. It reads the whole chapter, not just its beginning, no longer looks for a fixed number of problems, and a clean chapter is reported as clean
+- "Fix" on an error, or "Fix N errors" for a chapter, replaces exactly the words that are wrong and nothing else, so a fix can no longer introduce new mistakes; the previous text is kept in Versions. "Ignore" dismisses a finding for good. "Polish chapter" now works from the findings and leaves every correct sentence as it is
+- The originality score is explained as what it is: an AI opinion on how fresh the writing is, not a plagiarism check
+- The "Rewrite with AI" buttons in the editor say that they switch on once you select text and need no extra key
+
+**Word export**
+- Page numbers: the DOCX now has a page-number footer, matching the PDF
+- Quotations: consecutive lines starting with ">" stay together as one quotation, one line under the other, as in the PDF. Each line used to become a paragraph with space above and below, so verses came out double spaced
+- The section break line is now a thin rule that sits close to a heading above it, instead of taking a full blank line
+
+**Translations pick up chapters added later**
+- When a book was extended after an edition had been translated, the refresh button did nothing for the new chapters. An edition now takes over the chapters added to its source and translates only those; the finished ones are left untouched. A refresh with nothing left to do says so
+
+**BookyAI Listen**
+- "Save to" now starts with "Listen library (no book yet)": transcribe first and decide later which book a recording belongs to. The choice is remembered
+- Recordings can be renamed, in the list and in the transcript viewer. The name is updated in the Codex too
+- Removing a recording that lives in the Listen library also removes its transcript
+
 ## 1.9.14 — 2026-09-18
 
 **New add-on: BookyAI Listen, Speech to Book**
