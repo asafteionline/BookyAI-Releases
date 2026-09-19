@@ -3,6 +3,32 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.16 — 2026-09-19
+
+**OpenAI (ChatGPT models) as a writing engine, and any compatible server**
+- OpenAI is now a writing engine like Claude, Grok and OpenRouter: add your OpenAI key in Settings, pick a model (the list loads from your account) and choose OpenAI in the new-book wizard or under "AI engine for this book". Until now an OpenAI key was only used for covers
+- New "Base URL" field for OpenAI and for Claude: leave it empty to use OpenAI or Anthropic themselves, or fill it in to use any server that speaks the same API, such as LM Studio, vLLM, llama.cpp, DeepSeek, Mistral, Together or a company gateway. The model list loads from that address, and you can type any model name. A server on your own computer or network needs no key
+- Your keys stay where you put them: a key is only ever sent to the address it was saved for. If you change the Base URL, the saved key is not sent to the new address until you save it again, and the field tells you so. The page shows which host your requests and key go to, plain http is refused for addresses on the internet, and errors say what is wrong ("no chat endpoint at this address", "the server rejected the key", "could not reach localhost:1234, is the server running?")
+- Covers always use OpenAI itself. Under Extra tools, Covers, there is now a key just for covers; if your OpenAI engine uses the official address, its key is used and that field can stay empty
+- As with every paid engine: never used as a silent fallback, "Stay on my engine" is respected, models that think before they write get room on top of the chapter budget, and each chapter shows which model wrote it
+
+**Settings: sections instead of one long page**
+- A bar at the top: AI engines, Extra tools, Book defaults, Audio, Listen. Inside AI engines you pick one engine (Gemini, Ollama, OpenAI, Claude, Grok, OpenRouter) and see only what belongs to it, together: key, Save, Test, model and its own options. A dot on each button shows whether it is connected, needs a model, holds a key that is not saved yet, or is not set
+- Extra tools holds the three optional keys, each for one feature: Covers (OpenAI), Translations (DeepL) and Fact-check (Perplexity). Nothing else in the app needs them
+- "If my engine fails" stays visible under every engine. The Ollama URL moved from Book defaults to the Ollama panel. Buttons elsewhere in the app that lead to Settings open the right section
+
+**Lists that match the app**
+- Every drop-down list in the app now uses the app's own menu instead of the one the system draws: same colours everywhere, long lists scroll (an OpenAI or OpenRouter account lists dozens to hundreds of models), typing filters the list, and the arrow keys, Enter and Escape work. Model fields still accept a model name typed by hand, and the OpenRouter list keeps its groups (Free, Discounted right now, A to Z) and prices
+- In every menu, the row under the pointer turns green
+
+**Audiobook: the narrator no longer reads citations and leftover codes**
+- Source citations are left out of the narration, as in a professionally produced audiobook: "(Covey, 2006)", "(Smith & Jones, 2019, p. 44; Lee et al., 2018)", "Smith et al. (2021, p. 44)", numbered sources such as [1] or [3, 7], and the recording citations of books written from recordings, "(Episode 12, 14:05)". The voice used to read them out, which sounded like a four-digit number added to the end of a sentence. Years that are part of your prose stay: "In 2019", "the film (1995)", "World War II (1939–1945)"
+- Formatting codes that come along with text pasted or imported from Word or the web (an invisible space, a special hyphen, a curly apostrophe written as a code) were read aloud as numbers. Every such code is now decoded, and invisible characters are dropped
+- Your book and its exports keep their citations; only the narration changes. To apply it, render the affected chapters again: only the sentences that changed are synthesised, the rest comes from the cache
+
+**Authors**
+- "Replace" and "Remove" under the author photo and the publisher logo are now two matching buttons side by side
+
 ## 1.9.15 — 2026-09-19
 
 **New: a back-of-book index**
