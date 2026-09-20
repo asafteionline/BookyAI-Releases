@@ -3,6 +3,25 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.17 — 2026-09-20
+
+**New: the Guide. BookyAI shows you around**
+- A "Guide" button sits at the bottom left of the app. It opens "Your first book, step by step": five steps (connect an AI engine, start a book, let BookyAI write the chapters, give it a cover, export it) that tick themselves from what you have really done, with the next one opened and a "Show me how" button. Nothing opens by itself, and every part closes with Escape
+- A guided tour for every page: the screen dims, a light moves from one button to the next and a short card explains what it does and when you need it, with tips where they save a mistake. 18 tours: BookyAI in two minutes, the AI engine, the rest of Settings, the Library, the New Book form field by field, importing a manuscript, the book's page, the chapter editor, the Codex, Quality review, the Index, Cover Studio, Authors, Research, planning a series, a series page, Audio and Listen. The tours drive the app for you: the New Book tour walks through all four steps, the Codex tour opens the Codex and goes from section to section. Arrow keys move, and a tour of the page you are on is marked "this page"
+- API keys, explained for someone who has never seen one: every key in Settings has step-by-step instructions (what a key is, which page to open with one click, which button to press there, what the key looks like, what to do when something goes wrong). Gemini, Ollama, OpenAI, Claude, Grok, OpenRouter, and the optional keys for covers, translations and fact-checking. With no engine connected, Settings says where to start: the free Gemini key, about two minutes, no card
+- The first time BookyAI opens with no book and no engine, a welcome card offers the two-minute tour. If you already use BookyAI you only see the new button
+
+**About the Author is now a section of your book**
+- It used to be added at the end of every export from your author profile, whatever you ticked. It is now a row under "Front & back matter" like the others: untick it under "Include in book" to leave it out of this book, move it among the back matter, or edit it for this one book without touching your profile. The edited text is saved as about_author.md in the book's folder; emptied, the book follows your profile again. A book you never touched prints the profile's bio, exactly as before. BookyAI never writes this section
+- Translated editions get About the Author in their own language, and what you left out of a book stays out of its translations
+
+**Covers**
+- Words on the back cover: the book description and your author bio can now be set over the back cover artwork by BookyAI itself, so every word is spelled exactly as you wrote it, accents included. Under the back cover, "Text" opens them: "Write it with AI" drafts the description from your book, the bio comes from your author profile (or the book's own About the Author), and one tick switches the text off if you add your own in another program. The artwork is always kept on its own, so changing the words never costs a new image. An uploaded or gallery cover is a finished design: text is off for it unless you switch it on
+- "Save image" under each cover saves it wherever you want
+
+**Book page**
+- The subtitle can be edited in place, like the title; emptied, the book has no subtitle. A file name (from a recording, for example) no longer ends up as a subtitle
+
 ## 1.9.16 — 2026-09-19
 
 **OpenAI (ChatGPT models) as a writing engine, and any compatible server**
