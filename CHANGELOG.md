@@ -3,6 +3,44 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.18 — 2026-09-21
+
+**New: Author voice. Your books sound like you, not like an AI**
+- Every author profile (Authors page) can now carry the way its author really writes. Add a few pages you wrote yourself (paste text, or .txt, .md and .docx files), press "Learn my voice", and BookyAI writes your voice guide: how long your sentences are, which words you use, how you open and close a passage, and what you never do. Four numbers measured on your own pages go with it, and the expressions found in your writing, word for word
+- Correct it in your own words ("shorter sentences", "I never say journey"): every correction is followed in everything written afterwards. "Hear my voice" writes the same paragraph twice, without and with your voice, side by side
+- The voice is used for chapters, the front and back matter you sign, the editor's AI rewrites, Polish and Rewrite for originality. A book can switch it off for itself in its Voice card. In the chapter editor, "This sounds like me" teaches the voice from a passage you are proud of. Nothing written at hand? "Build my voice by interview" learns from how you answer a few questions
+- A profile without a voice writes exactly as before
+
+**New: Interview Mode. BookyAI draws the story out of you**
+- In the chapter editor, "Interview me" reads your chapter, finds where something you lived would make the idea land, and asks you about it one question at a time, each picking up what you just said. The "Your story" meter shows what your story already has: where and when, who was there, what happened, what you felt, what it means now
+- It then writes your story into the chapter, shows you where, and lets you trace every sentence back to the answer it came from. It never invents: a detail you did not give is asked for, not made up, and a name or number that is in none of your answers gets an amber mark before you accept. "Undo last AI edit" brings the chapter back in one click
+- Your story is kept in the book's Codex in your own words, so a later chapter can recall it. Closing the window loses nothing: the conversation is kept
+- In New Book, "Tell me your stories first" interviews you before anything is written. Your book is then planned around what you really lived, and those chapters are written from your answers
+- For owners of the add-ons: with BookyAI Audio the questions can be read aloud, and with BookyAI Listen you can speak your answers instead of typing them
+
+**New: Plan my book with me, and a blueprint you can bring from anywhere**
+- In New Book, BookyAI can plan the book with you like an editor, in six steps: the promise of the book, the title (three options), the chapters in order, what each chapter must contain, the voice, and the facts that must stay exact. It proposes, you change anything by hand or in your own words ("merge chapters 3 and 4"), and nothing enters the plan until you press "Agree". Your blueprint fills in beside the conversation, and you can stop and continue later
+- The book is then written from that blueprint exactly: the AI does not plan it again, each chapter follows what you agreed for it, and your facts go into the Codex. The blueprint is a .json file you can save, share, and start another book from
+- Worked your book out in ChatGPT, Claude or Gemini? "Copy the prompt" makes that chat hand you the whole conversation as a blueprint file. "Start from a blueprint file" shows what BookyAI understood before anything is created. Nothing in the file is lost: a section BookyAI does not know goes into the Codex as a note
+
+**Your manuscript**
+- Delete a single chapter: the bin at the end of a chapter's row. The chapters after it are renumbered, together with their reviews, references, index and audio. Its text is kept: "Deleted" above the chapter list brings it back where it stood
+
+**Authors**
+- Frame your author photo: drag it, zoom, choose square or portrait, with previews of the round photo on the back cover and of the photo next to your bio. The photo you uploaded is kept, so you can frame it again at any time
+
+**The Guide**
+- Two new tours open the interview and the planning windows on an example and explain every part; nothing is sent to your AI engine while they run. A new list, "Make it yours", ticks itself once you have an author voice, a story of your own, or a book that follows a blueprint. Steps for every new button, and three new tips
+- Fixed: the X on the Guide panel did not close it (only a click outside did). The panel no longer covers the window's own buttons
+
+**Gemini**
+- When the model you selected cannot answer, BookyAI now says so in plain words and in the name of that model, with Google's own message: for example that the model has no free quota on your key (some Pro models are offered by Google only with billing enabled), or that your key does not have it. Until now the error could name a different model, as if your selection had been ignored
+- "Test" says which model answered, and warns when it is not the one you selected. BookyAI only rotates through the models your key really has, and stops retrying models that cannot work on it
+- Your API key is no longer part of any web address BookyAI calls
+
+**Windows**
+- An update is never installed unseen any more. When you close BookyAI with an update ready, it asks: "Update now" shows the installer and reopens the app by itself, "Later" closes normally. Before, closing started a silent install of about a minute, during which the shortcut said its target did not exist
+
 ## 1.9.17 — 2026-09-20
 
 **New: the Guide. BookyAI shows you around**
