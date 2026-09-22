@@ -3,6 +3,45 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.19 — 2026-09-22
+
+**New: Add my story. A memory that comes up while you read goes into the chapter, right there**
+- In the chapter editor, put the cursor where the memory came up, or select the sentence, and press "Add my story here". Tell the story in one go, typed or spoken (with BookyAI Listen), in any order. BookyAI asks only what is still missing, three questions at most, and says why each detail matters to the reader. Then it writes the story into the chapter at that spot, in your words, and shows you the result before anything changes
+- No spot in mind? "I have a story" on the Interview card, or "Add a story" on a chapter in the Quality review, go straight to the telling. Before writing, BookyAI shows the two or three places in the chapter where the story would make the point, each with the paragraph it would follow and why. Pick one, or let BookyAI decide
+- The preview is the chapter itself with the new passage in place, every sentence traced to what you said. "Shorter" and "Longer" write it again at another length, "Different spot" moves it, "Edit by hand" lets you change the words before it goes in
+- A story is never used up. Every story you told is in the Codex with the chapters it was written into. "Where else?" finds the other chapters that would gain from it, and "Put it there" opens that chapter with the story ready. When you start an interview, "Stories you already told" offers them again
+- No time now? "Remember for later" keeps one line ("the burned batch, 1998") with the spot where you were reading. It waits in the Interview card until you tell it
+
+**New: the working subtitle is the book's promise**
+- The New Book form has a working subtitle next to the working title: what the reader gets from the book, in one line. "Suggest title and subtitle" proposes five pairs from your topic; one click fills both fields
+- The AI now plans the chapters to deliver that promise and writes every chapter to it. Until now it never saw your title or subtitle while planning or writing, and a working title even left the book without a subtitle. On the outline review, the pair sits at the top to settle before anything is written
+- On the book's page, the new "Promise" card shows the pair and how often it changed, proposes pairs from the chapters actually written, and answers "Does the book keep its promise?": what the pair promises, which chapters deliver it, which drift and why, and a better subtitle when the book outgrew the one you had. Nothing is rewritten without you
+- Confirm the title and subtitle before publishing: it is a line of "Ready to publish", and any later change to either reopens it
+
+**The book's page, rearranged**
+- "Ready to publish", first in the right column: chapters, cover, front and back matter, quality review, the title and subtitle, then export, each computed from the book. Click a line to jump to its card. When everything is ticked, the last line exports the book
+- Every card on the right folds to one line that says its state ("Book design · Classic · 6 × 9 in", "Front & back matter · none yet"). A card starts open only when it has something to do; your own click is remembered. The column stays in view while the manuscript scrolls, and the manuscript no longer stretches down an empty page
+- Book design shows the design in use; "Change design" opens the whole gallery in a window. The chapter editor and the series page got the same folding column
+
+**Settings changed after the chapters were written**
+- Each chapter now remembers the settings it was written with. When you change the tone, the audience, the narration, the author voice or the subtitle, a card on the book's page lists what changed, which chapters still carry the old choice, and what else is touched (front and back matter, the back cover text, translated editions, narrated chapters)
+- "Restyle" rewrites those chapters in the new settings while their facts, structure, headings, length and your own edits stay; one AI call per chapter, the old text in Versions. "Regenerate" starts them again from the outline. "Keep as written" applies the change only to what comes next. A language change is a translation, and a title or subtitle change is a promise, not a style: the Promise card checks it instead
+- The Voice card's "Apply to the written chapters" opens the same window with Restyle preselected, instead of regenerating at once
+
+**Updates**
+- macOS: if BookyAI runs outside your Applications folder (opened from Downloads or from the disk image), it offers to move itself there at start, in one click. Outside Applications, macOS keeps the app in a protected copy that the updater cannot replace, which is why "Relaunch to update" could look dead. BookyAI no longer pretends to install where it cannot: it says so and offers the move
+- Every step is visible: "Checking for updates", the download with its percentage, "Version X is ready", "Installing". If BookyAI cannot restart itself, it says so within seconds and gives you the download. A failed check or install says why, in plain words
+- "Check for updates" is in Settings, Extra tools, and behind the version number at the bottom of the sidebar, with when it last looked. The first time BookyAI opens on a new version, "What's new" opens by itself with "Updated to X. You were on Y"
+
+**Gemini**
+- When Google refuses a request (its safety filter, on the topic, the notes or the stories in it), BookyAI now says so, with Google's reason, instead of "Empty response" after trying every model. Your key and the model are fine in that case; the wording of the request has to change, or another engine. An answer cut by the safety filter, a thinking model that spent its whole budget, or a model that answered nothing at all are each named for what they are
+
+**New Book**
+- "Hear this voice first" uses the engine you really use. The form now starts with the engine of your last book, or the first one connected, instead of Gemini for everyone; the Voice step says "Written with <engine> · change the engine". With no usable engine, the message names which one is missing instead of "All providers failed"
+
+**The Guide**
+- New tour steps for everything above, on the Guide's fixed example where a window is involved. "Make it yours" gains "Hold the book to its promise". Two new tips. Settings tour: the Updates card
+
 ## 1.9.18 — 2026-09-21
 
 **New: Author voice. Your books sound like you, not like an AI**
