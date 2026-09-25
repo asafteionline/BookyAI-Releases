@@ -3,6 +3,37 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.20 — 2026-09-25
+
+**New: collections. Every chapter its own story**
+- The New Book form now asks "What kind of book?": one continuous book, as always, or a collection, where every chapter is a complete story with its own title. Short stories on a theme, true tales, case studies, a Darwin Awards style book
+- For a collection, say what the stories are (invented, inspired by real events, or your own), what ties them together, and what every story shares: a frame, a closing line, a verdict at the end of each one
+- "Your stories" lists one row per story. Write what each one is about, fill in only a few and let BookyAI invent the rest in the same spirit, or paste a list you already have. "Suggest story ideas" pitches stories that fit your collection, each with a one-line hook: keep the ones you like with one click
+- Every story is written to stand on its own: its own people, its own place, its own ending, no cliffhanger into the next one. BookyAI keeps a note of the names, settings, twists and first lines already used, and every new story is written to be different from all of them. Your own stories keep their place and their title
+- Stories inspired by real events retell known events or use composite characters with the names changed; nothing made up is presented as fact, and the copyright page says that names and details have been changed
+- The exports look like a real collection: each story under its own title, without "Chapter 7" above it, in every format and in the audiobook. Book details can turn the chapter numbers back on
+- On the book's page, "Extend with AI" becomes "Add stories", and Reorder offers "Arrange for the reader": a reading order with a strong first story and the most memorable one last, with the reason for each move, applied only when you say so
+- Quality review: "Variety across stories" flags a character name used in more than one story, stories that open with the same words, and a story that points at another one
+- Any book can become a collection later from Book details. "Plan my book with me" and blueprint files understand collections too, and the back cover description presents the book as a collection
+- A book that is not a collection is written exactly as before
+
+**KDP print wrap, fixed**
+- Each cover now sits exactly on its trim in the wrap, and the bleed around it is made from the picture's own edge. Before, the covers were stretched over the bleed as well, so the design sat off-centre and KDP's trim cut into it, much more on trims that are not 6 × 9
+- The back cover keeps KDP's barcode area clear: 2 × 1.2 inches, at the place and distance from the spine and the edges that KDP requires, on solid white. KDP rejects a cover with text or pictures in that area
+- The back cover in the wrap is laid out for the trim you print, at print resolution, with its text inside the safe margins and clear of the barcode area. The preview shows the bleed, the trim, the folds, the text-safe lines and the barcode area ("Show the guides"; nothing of it is printed), and warns when your cover's proportions differ from the trim and how much would be cut
+
+**Covers**
+- A back cover chosen from the gallery for another book keeps its artwork and gets this book's own description and author text, instead of the other book's words baked into the picture
+- The ebook back cover no longer has a white barcode box: an ebook has no barcode. Back covers made before are updated once, by themselves
+- The PDF no longer includes the front and back covers by default. The PDF is the inside of your paperback, and KDP wants it without the cover. Tick "Covers in the PDF" in the Export card for a PDF to read or share with its covers
+
+**Reorder the front matter and the appendices**
+- Reorder on the Manuscript now moves everything in three groups: the front matter (with the contents page), the chapters, and the back matter. Drag a row or use the arrows. Acknowledgments and the Author's Note can move to either side of the chapters
+- The standard order follows the kind of book: a novel now prints the Author's Note and the Acknowledgments after the Epilogue, as novels usually do. Non-fiction keeps the order it had. A book whose order you arranged yourself keeps your order
+
+**The Guide**
+- New tour steps and texts for everything above. The New Book tour shows the collection fields on an example, so you can see them without changing your book
+
 ## 1.9.19 — 2026-09-22
 
 **New: Add my story. A memory that comes up while you read goes into the chapter, right there**
