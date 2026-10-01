@@ -3,6 +3,49 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.21 — 2026-10-01
+
+**New: BookyAI Activity Studio. Whole puzzle and activity books for Amazon KDP**
+- A new add-on with its own page in the sidebar, "Activity". Pick the kind of book, choose who it is for, and its studio builds every page: the title page, the puzzles or designs, the answers and the closing pages, at the exact trim and margins KDP expects. Every puzzle is solved and every design measured before the book keeps it
+- Four studios are ready: **Word Search** (large print, themed, kids, shapes and hidden pictures, gift books), **Sudoku** (seven puzzle types from Easy to Evil, Wordoku, lessons and a hint for every puzzle), **Coloring Books** (mandalas, patterns and patterned animals drawn on your computer, pages from your photos or your image AI) and **Color by Number** (mystery mosaics, color by code for children, your own pencil sets, an answer key PDF to give away)
+- Each book also exports a printable edition for Etsy or your own shop and page images for your listing, and goes to Covers with everything filled in. Sudoku, Coloring Books and Color by Number also write the listing text. Book pages in 11 languages
+- Each studio is bought once, $97, with all its future updates. No subscription. Eleven more studios arrive with the coming updates
+- Early access: while new studios are still arriving, the code STUDIO50 at checkout takes 50% off any studio. It ends 3 days after the last studio is released
+- Bought one with your BookyAI account? It unlocks by itself: "Check my purchases" on the Activity page looks again, and a key received by email goes in "Enter a key". Every studio has its own 14-day guarantee
+
+**Regenerate all chapters in one click**
+- "Regenerate all" above the chapter list writes every chapter again, one after another, from the same outline, with the engine you choose
+- In this book (every chapter's current text is kept in its Versions first) or in a copy of the book, so you can read both side by side. The copy appears in your Library with a "Copy" label
+- A chapter that fails keeps its old text, and you can stop at any time
+
+**Imported manuscripts: the AI works on your own chapters, only when you ask**
+- On an imported book, the wand on one of your chapters rewrites it: Polish, In the book's style, Expand or Tighten from your own text, or Write again from my chapter, where BookyAI first plans your chapter (what happens and what must stay) and then writes it fresh
+- Your text is saved first as "Your original" in the chapter's Versions, kept for good and never pruned. Put it back at any time
+- A rewrite that comes back cut off or the wrong length is not kept: your chapter stays as it was
+- Rewritten chapters are marked "AI rewrite", so you can answer KDP's AI question correctly. "Regenerate all" on an imported book keeps your own chapters unless you choose otherwise, and starts on "In a copy"
+
+**The writing model you chose stays the one that writes**
+- When the model you picked is busy, another model may write the chapter so the book finishes, but never silently any more: the progress line says so and the chapter's engine label turns amber
+- "Stay on my engine" in Settings now also keeps the model you picked: BookyAI waits and tries it again instead of switching
+- Automatic remembers the model it settled on after you close and reopen the app, instead of starting the rotation over
+- Settings are saved safely, with a backup: a save cut short can no longer reset them to the defaults. "Start over" in New Book keeps your engine
+
+**Blueprints and "Plan my book with me"**
+- A blueprint file now brings the whole voice into the form: the style and tone, and for a novel the narration, the romance heat level and the formality
+- "Save .json" saves the voice as the form has it, and "Load from a file" brings your edited blueprint back
+- In the plan's "one per line" fields, Enter starts a new line where the cursor is. The fields grow with their text, and a new button gives the plan the whole window
+
+**Video tutorials**
+- "Prefer watching? Video tutorials" at the top of the Guide, and a new Help menu (Video Tutorials, Help Center, Members Area). On Windows, press Alt to show the menu bar
+
+**Fixes and smaller improvements**
+- Western, Drama, Magical Realism, Coming-of-Age, Action, Romantic Comedy and Short Stories are treated as fiction (narration, story craft); True Crime as non-fiction. Romantasy, love stories and rom-coms get the heat level, and the voice previews follow the narration and heat level
+- Import: the book's title comes from the document's title page, or else from a tidied file name, and an "Introduction" lands in the front matter
+- The series page counts a volume as written only when every chapter is done
+- Ollama has its Test button in Settings, with a clear message when Ollama is not running or has no model. OpenRouter's Auto model is listed once. Long audiobook estimates read "1h 26m"
+- Clearer, truer wording in many places: deleting a book moves it to the Trash or Recycle Bin, the originality score is an AI opinion (not a plagiarism check), and more
+- The Guide follows everything above
+
 ## 1.9.20 — 2026-09-25
 
 **New: collections. Every chapter its own story**
