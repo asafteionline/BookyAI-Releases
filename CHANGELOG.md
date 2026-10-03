@@ -3,6 +3,70 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.22 — 2026-10-03
+
+**New: living relationships in the Codex**
+- Relations now hold how each side feels ("Elisa loves Tom, Tom sees her as a sister"), how strong the tie is, whether it is a secret, and from which chapter it begins
+- Relationships change along the book: from chapter 7, friends become rivals. A romance gets its moments (the first meeting, the first kiss) in their chapters. Every chapter is written with the relationships as they stand in it
+- Secrets: who knows what from the start, who learns it in which chapter, and when the reader is told. A character never acts on a secret before learning it
+- "Describe in your words" draws the map from a few sentences. "Read my chapters" finds the relationships, changes and secrets your chapters already show, each with the sentence that proves it. "Find the tension" points at flat relationships and suggests ideas, which can become open threads
+- The map moves in time: drag the slider or press play to watch the relationships chapter by chapter. The whole map can be saved as a picture
+- The consistency check reads each chapter against the Codex as it stands in that chapter: people acting against their relationship, someone knowing a secret too early
+
+**New: the Mystery board**
+- A new Codex section for mysteries: the solution, sealed; the suspects with motive, opportunity and alibi; every real clue, red herring and misdirection in its chapter, how it is hidden and where it is explained
+- "Plan the mystery with me" proposes a fair-play mystery from your idea or from the book. "Check my chapters" reads the written chapters: which clues were really planted, where the truth slips out too early, and what a chapter added on its own
+- "Who the reader suspects" charts each suspect's suspicion chapter by chapter. Fair play lists what a careful reader would hold against the book: a culprit who was never a suspect, a clue only after the reveal, a culprit who leads too early or is left alone by elimination, a red herring never explained, chapters that plant nothing
+- The chapters keep the secret: before the reveal, a chapter is not given the solution and must not let the reader tell who did it, and the reveal chapter walks through every real clue. "The case as everyone knows it" keeps the dates and the night of the crime the same in every chapter
+- Plan it before the book is written: a mystery's outline review offers "Plan the mystery", then "Fit the outline to the board" puts each clue in its chapter. The same button on the Mystery board fits the outline of a written book again
+- A mystery's back cover description never points at the culprit
+- Mystery books show the board by themselves; any other novel opens it with "Has a mystery?" at the top of the Codex
+
+**New: chapter illustrations**
+- The Illustrations card on the book's page draws one picture for every chapter, all in one style: pencil, ink, children's storybook, watercolor, painted, modern flat or photographic
+- Your writing engine, Ollama included, picks the moment to draw, and your OpenAI or Gemini key draws it. Pictures sit across the page, on a full page, or square and centered, at the top of each chapter in every export
+- Draw one chapter's picture again with your own idea of what it should show, or remove it. Editing or regenerating a chapter never loses its picture. The black and white styles print without a color interior
+
+**New: text size, up to large print**
+- Every design now has a text size: Standard, Larger (13 pt), Large print (16 pt), Extra large (18 pt), or any size in between
+- A printed page drawn to scale shows the size before the book exists, "See it at actual size" shows it as a reader will hold it, and the page count follows at once
+- Large print is set the way low-vision readers find easiest: an even left edge, no split words, headings and page numbers grown with the text. BookyAI suggests the larger 7 x 10 and 8.5 x 11 trims and reminds you that KDP wants "Large Print" in the title or subtitle
+- New Book has a "Print & text size" section, and suggests large print when your readers are seniors. On the book's page, the size is under Book design
+
+**Covers**
+- A book's front or back cover can be replaced or removed from the book's page. A removed cover stays in the Cover Studio gallery
+- "KDP print wrap" on the book's page opens the full paperback cover with this book's covers, trim and page count (the real count once a PDF was exported)
+- When the image AI refuses a picture, BookyAI says why in plain words: a Gemini key without picture quota, an OpenAI account without billing, a busy service
+
+**Deleting books**
+- Delete a book from its own page (Book details), from the series page, or with the trash button now always visible on Library cards. The book goes to the Trash or Recycle Bin
+- If the Trash will not take a book, nothing is deleted until you agree to delete it permanently
+
+**Your books folder moved? BookyAI finds it**
+- When OneDrive, iCloud or a settings reset moves your books, an empty Library finds them and offers "Use this folder". Settings, Book defaults, has "Choose folder"
+- A book whose folder moved is read from where it is now: exports no longer show "Content unavailable" in every chapter
+
+**Translations**
+- Translating with Gemini 2.5 and newer no longer fails with "came back incomplete": these models now get room to think and still write the whole passage
+- A failed edition says why under its row, with "Try again", and the chapter squares fit narrow windows
+
+**Fixes and smaller improvements**
+- New in the Export card: "Same quotation marks throughout". The AI writes each chapter on its own, so a book can mix ‘single’, “double” and straight quotes; BookyAI now tells you when yours do. On, every export speaks in the style most of your chapters use, with curly quotes, quotes inside quotes turned round, and apostrophes kept as apostrophes. Your chapter files are not changed
+- A chapter's title repeated at the top of its text no longer shows up as a heading under the title when it was written with other quote marks or in another language ("### Chapter 5: The Rival's Shadow", "Capitolul 3")
+- The relationship map places each label where it covers no portrait, no name and no other label
+- Blueprint files: an invalid file says what is wrong, on which line and column; fields BookyAI does not read are named, with the one you probably meant; curly quotes from a word processor are straightened
+- Writing: a chapter that repeats one sentence over and over is cut and asked again, a chapter received twice is kept once, and the last two chapters answer every open thread or name it for the next book
+- "Regenerate all" shows its real progress ("N of 18 written again"), and the chapters still waiting show a clock
+- An unsaved Mystery board is never lost when another part of the Codex is saved, closing the Codex asks first, and the Codex says "Saved"
+- Chapter rows on the book's page stay tidy on smaller or scaled screens, such as Windows at 150%
+- Titles you can edit in place show a pencil: the chapter editor, the outline review, the import preview, references
+- Renaming a chapter also renames its first line when the text repeats the old title
+- The note editor in Codex, Knowledge, fills the window
+- The "About the Author" page is left out when there is no bio or photo, instead of printing "Content unavailable"
+- BookyAI no longer leaves narration or Listen processes running after it closes unexpectedly, which could stop the Windows installer from updating
+- Names with a title keep it on the relationship map and in reports ("Dr. Simon", not "Dr.")
+- The Guide has two new tours, "Relationships, in depth" and "The Mystery board", control by control, and follows everything above
+
 ## 1.9.21 — 2026-10-01
 
 **New: BookyAI Activity Studio. Whole puzzle and activity books for Amazon KDP**
