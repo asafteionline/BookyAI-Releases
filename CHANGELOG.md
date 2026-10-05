@@ -3,6 +3,31 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.23 — 2026-10-05
+
+**New: Replace in the whole book**
+- A new "Replace" button next to Codex changes a word or a name everywhere in the book: a character renamed, a word dictation misheard ("Kathryn" for "Katherine")
+- It reaches what the AI writes from too: the outline, the Codex, your interview stories and the chapter summaries, so regenerating no longer brings the old word back
+- You see every place it is found, with a count and a sample, before anything changes. Whole words only and match case are options. Each chapter's old text is kept in its Versions
+
+**New: instructions for every chapter**
+- "Regenerate all" has a field for instructions that every chapter follows, such as "Do not reveal that Tom is John's son before chapter 3". The AI knows which chapter it is writing, so an instruction about some chapters applies only to those
+- Tick "Keep these for this book" and later regenerations and new chapters follow them too. They are in Book details, "Instructions for every chapter", where you can change them at any time
+
+**Your AI engine is remembered**
+- The engine you choose last (for a new book, in a book's details, or in a studio) is where New Book, imported books, the Activity studios and Settings start, after a restart too, as long as it is still connected. It no longer falls back to Gemini
+
+**Claude: no more empty chapters billed again and again**
+- Claude models that think before they write (such as Claude Fable 5) now get room to think and still write the chapter. They used to spend the whole budget thinking and return no text
+- An answer with no text, a refused key or a declined request is no longer asked again several times: each try of a paid engine is billed. The message says what happened and what to choose instead
+
+**Fixes and smaller improvements**
+- Translations: a chapter whose text had no title line kept its original title; it now gets its title in the edition's language. Editions made before this get their titles on the next run (the button in Editions says how many are left)
+- Every chapter the AI writes now opens with the book's own title and no repeated "Chapter N" line, whatever the model wrote at the top
+- The Word (DOCX) contents page reads right in Google Docs and previews: the chapters as links, without wrong page numbers. Microsoft Word fills in the real page numbers when it updates the fields. For a paperback on KDP, upload the PDF
+- A chapter label in the book's own language at the top of a chapter ("Chapitre 2", "Kapitel 2") no longer shows up in exports
+- Settings no longer calls Gemini "the default engine for every book"
+
 ## 1.9.22 — 2026-10-03
 
 **New: living relationships in the Codex**
@@ -52,7 +77,7 @@
 
 **Fixes and smaller improvements**
 - New in the Export card: "Same quotation marks throughout". The AI writes each chapter on its own, so a book can mix ‘single’, “double” and straight quotes; BookyAI now tells you when yours do. On, every export speaks in the style most of your chapters use, with curly quotes, quotes inside quotes turned round, and apostrophes kept as apostrophes. Your chapter files are not changed
-- A chapter's title repeated at the top of its text no longer shows up as a heading under the title when it was written with other quote marks or in another language ("### Chapter 5: The Rival's Shadow", "Capitolul 3")
+- A chapter's title repeated at the top of its text no longer shows up as a heading under the title when it was written with other quote marks or in another language ("### Chapter 5: The Rival's Shadow", "Kapitel 3")
 - The relationship map places each label where it covers no portrait, no name and no other label
 - Blueprint files: an invalid file says what is wrong, on which line and column; fields BookyAI does not read are named, with the one you probably meant; curly quotes from a word processor are straightened
 - Writing: a chapter that repeats one sentence over and over is cut and asked again, a chapter received twice is kept once, and the last two chapters answer every open thread or name it for the next book
