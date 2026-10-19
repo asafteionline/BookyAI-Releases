@@ -3,6 +3,69 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.24 — 2026-10-19
+
+**Chapters now reach the length you ask for**
+- A chapter set to a long length (5,000 or 6,500 words, for example) used to come back far shorter, often a quarter of it. Long chapters are now written in shorter parts, each with its own share of the chapter's plan, and a part that comes back short is continued where it stopped instead of being accepted as it is
+- From 1,500 words up, the length you set is a minimum the AI is asked to reach. Short chapters are written exactly as before
+- If a chapter still stays well under its length, it keeps its text and its row says "short", with the length you asked for
+- When an AI engine stops an answer because it ran out of room, BookyAI now asks it to continue instead of keeping half a chapter. Engines that think before they write get room for both
+
+**New: Parts**
+- Group chapters into parts, such as "Part I: The Ranch". "Add part here" on a chapter starts a part there; a part can be renamed, given a few lines of introduction, or removed. In Reorder, parts move with their chapters
+- Chapter numbers run on across parts. Every export has them: a part page of its own in the PDF, bold part lines with their chapters under them in the contents, nested contents in the ebook, and "Part Two" announced in the audiobook
+- New Book has "Group chapters into parts": Off, Let the AI decide (12 chapters or more) or On. The outline then proposes the parts, you can change them in the outline review, and each chapter is written knowing which part it belongs to
+- Imported manuscripts keep their parts: "Part One" headings become parts, not chapters
+
+**New: Retitle chapters**
+- Titles are planned before a word is written, and a chapter often goes somewhere else. "Retitle" above the chapter list reads every written chapter, says whether its title still fits and proposes one, then reads all the titles together so they don't repeat
+- You see the old and the new titles side by side and tick the ones to change. "Bring back the old titles" undoes the last change
+- "Suggest" in the chapter editor now reads the whole chapter, not just its opening
+
+**New: front and back matter your way**
+- Rename any front or back matter heading, such as "Acknowledgments" to "Special Thanks". The new heading is used in every export and in translations, and "Reset to default heading" brings the usual one back
+- Add sections of your own, before or after the chapters: a Special Offer, a Bonus, a Reading Group Guide. Write them yourself or start from "Draft with AI". BookyAI never rewrites them when it generates front and back matter
+
+**New: chapters start on a right-hand page**
+- Book design has "Start chapters on a right-hand page (print)". Each chapter, the contents page and the front matter then open on an odd page, as in most printed books, with a blank page added where needed and no page number on it
+- The page count and the KDP cover spine follow. Ebooks are not changed
+
+**New in Activity Studio: Mazes**
+- The fifth studio builds whole maze books: square, round, hexagonal, triangular, organic, octagon and pentagon grids, weave mazes with bridges, mazes in 173 shapes or in your own pictures, letters and names, and hidden picture mazes where the way through draws the picture
+- Every maze is checked to have one way through, and its difficulty is measured, not guessed. Levels from little children to experts, with the solutions at the back
+- For children: a picture at the start and the finish, stars to collect and ghosts to avoid, thicker lines, loops for older solvers, page borders and "This book belongs to"
+- Book pages in 11 languages, the listing text, a printable edition and page images, like the other studios
+
+**Plan my book with me**
+- Text you edit by hand in a proposal is marked "Edited by you" and stays as you wrote it when you ask for a change, unless your request names it ("change chapter 3"). Adding a chapter between two others keeps every chapter you edited
+- "Undo this answer" brings back the proposal as it was before your last request
+- When you go back to The chapters and change the list, Chapter by chapter follows it as soon as you agree: chapters you kept keep their details, and only new chapters are filled in. A new chapter no longer takes on the details of the one next to it
+
+**Exports**
+- The Word (DOCX) title page now carries your publisher logo, as the PDF and the ebook do
+- The Word contents page lists each chapter by its title, without the spaced "C H A P T E R" in front of every line
+- A chapter whose title is only "Chapter 1" (or "Chapter One", "Chapter I") prints it once, not twice. This also fixes books imported earlier, with no change to your files
+
+**Importing a manuscript**
+- Chapters that Word numbers by itself are found and kept in order, even when the numbers are not in the text
+- Word's own table of contents, and a contents list typed by hand under "Table of Contents", are left out instead of becoming a Preface
+- "Chapter 1: The Storm" imports as "The Storm", since BookyAI numbers the chapters itself, and bold chapter lines are recognized
+
+**Series Codex**
+- Switching the Codex between This book and Series, or closing it, now asks before anything you typed is lost: Save, Discard or Cancel. Characters and the World save together
+- A character needs no short key any more: it is made from the name. "Share with series" moves a book's character or world entry to the whole series
+
+**Narration**
+- Clearer pronunciation in every voice language, with the biggest gains in Hindi, Japanese and Chinese. Spanish, French, Italian and Portuguese voices read more cleanly
+- On some Windows computers the narration engine would not start; it now brings everything it needs with it. If it still cannot start, the message says what to do
+
+**Fixes and smaller improvements**
+- A copy of a book (Regenerate all, in a copy) says on its page which book it is a copy of, and the original lists its copies, so you always export the one you mean. Regenerate all on an imported book now starts on "In this book"
+- After an export, a note stays on the page with the book's title, the formats and the folder, and "Open folder"
+- The chapter editor saves your last change when you leave it, and says "Not saved" if a save fails
+- Typing a name into a list such as Author & publisher now picks the matching entry instead of quietly going back. The Voice card names the author whose voice is used, with a "Change" link
+- With Ollama, the AI gets more room for long chapters, but never more than your computer's memory carries
+
 ## 1.9.23 — 2026-10-05
 
 **New: Replace in the whole book**
