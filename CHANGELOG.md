@@ -3,6 +3,58 @@
 <!-- Source of truth for the in-app What's new dialog and the GitHub release
      bodies. Format per entry: '## <version> — <YYYY-MM-DD>' then markdown. -->
 
+## 1.9.25 — 2026-11-10
+
+**New in Activity Studio: Cryptograms**
+- Builds whole cryptogram books from a library of 3,778 famous quotations by 401 authors, each with its author, dates and source, in 24 themes. By default only quotes in the public domain worldwide are used
+- Every puzzle gets its own key, with no letter standing for itself. A solver proves that each one reads only one way with its hint letters, adding a hint where one is needed, and its difficulty is measured: Easy to Expert, with stars
+- Eleven starting points, among them large print for seniors, themed chapters, Shakespeare, the poets, "Who said it?" with the author coded too, number code puzzles, pun cryptograms with a clue letter (your own puns, or drafted by AI and checked) and a pocket travel book. You can also choose a quote by hand or type your own
+- Hints on the page or in an Extra hints section, the solutions with page numbers, an index of authors, letter counts and an A to Z row. Book pages in 11 languages (the puzzles stay in English), the listing text, a printable edition and page images, like the other studios
+
+**New in Activity Studio: Word Fill-In**
+- Fill-it-in puzzle books: crossword-style grids with no clues, where the reader fits in every word from a list grouped by length. Word fill-ins with real English words, number fill-ins, themed fill-ins whose long words come from one theme, and kriss-kross puzzles with little pictures for children
+- Every puzzle is proven to have exactly one solution from its word list and starter words alone, and its difficulty is measured by a solver that works the way a person does. Rare and unwanted words are kept out of the grids
+- Symmetric grids up to 19 x 19, one puzzle a page or the list on the left page and the grid on the right, and the solutions at the back with page numbers
+- Seven starting points, from large print for seniors to hard and expert grids and a pocket travel book. Book pages in 11 languages, the listing text, a printable edition and page images
+
+**New in Activity Studio: Rebus Puzzles**
+- Three kinds of puzzle: picture and sound rebuses you read aloud (bee + leaf = BELIEF), letter sums on pictures (pear, change P to B = BEAR) and word position puzzles where the layout is the saying (MIND written over MATTER)
+- Every puzzle is read back before it is kept, to check that it gives its answer and no other, and its difficulty is measured: four levels, with stars. 403 built-in pictures, in black and white or in color, with no faces or people
+- How to solve with an example of each kind, letter-count blanks, three answers to choose from for young children, a first-letter hints page and an answer key that can explain every answer, or each page's answers upside down at its foot
+- Nine starting points, from picture rebus for ages 6 to 8 to large print for seniors and family puzzle night. Your rebus books do not repeat each other's puzzles while fresh ones are left. Book pages in 11 languages (the puzzles stay in English), the listing text, a printable edition and page images
+
+**New in Activity Studio: Nonograms**
+- Picture logic puzzle books (also called hanjie or griddlers), in black and white or in color, from 5 x 5 to 30 x 30, with 404 built-in pictures in seven themes
+- Every puzzle is solved the way a person solves it before it may print, which proves it has exactly one solution and needs no guessing, and a second, independent check proves the same. Its difficulty is measured from that solve: Easy to Expert, with stars
+- Your own pictures: lay a picture of yours on the grid, let your image engine draw one, or draw it cell by cell. When a picture would need guessing or has two solutions, the studio changes the fewest cells it can and shows you which. Any puzzle in the book can be edited cell by cell too
+- How to solve with a worked example, a page for each level, and the solutions as finished pictures, with "Solution on page N" by every puzzle. Your books do not repeat each other's grids while fresh ones are left
+- Eight starting points, from first picture grids for kids to big expert grids, large print and color nonograms. Book pages in 11 languages, the listing text, a printable edition and page images
+
+**New: your notes and research, before the book is written**
+- New Book now starts with a card "Your notes and research". Paste notes or add files (text, Markdown, Word or PDF, or drop them on the card) before you even have a topic: research, an old draft, an outline, characters, the rules of your world
+- BookyAI reads them when it interviews you, when it plans the book with you, and for every chapter it writes. The interview asks about what your notes leave out, and the plan proposes chapters that cover them
+- Long notes are no longer cut to their first page. Notes that fit are sent whole; longer ones give an overview to plan the book and, for each chapter, the passages that match it, so even small AI engines keep up
+- The notes become the Knowledge tab of the book's Codex. The Story bible box is now part of them, and a saved draft's story bible moves there by itself
+- Knowledge in the Codex can now add Word and PDF files too, shows word counts, and after an edit says that chapters already written do not change. Notes added after planning bring a reminder to plan again
+
+**New: local engines can take their time**
+- On a computer without a graphics card, Ollama or another engine running on your own computer can take several minutes to start answering a long chapter. BookyAI used to give up after 5 minutes and say the engine was "not reachable"; it now waits
+- New setting "Wait for a local engine", in Settings with your local engine: 10 minutes, 30 minutes (the default), 1, 2 or 4 hours, or No limit. Stop always works
+- While it waits, the chapter's progress line says the engine is reading the prompt. If the wait runs out, the message says what to try (a smaller model, a shorter context or a longer wait), and "not reachable" now means only that the engine could not be reached
+
+**Exports**
+- The HTML export now reads well on screens: the text has margins and a comfortable reading width, and on a phone it fits the screen instead of showing a tiny desktop page. The PDF is not changed
+- Word (DOCX): with formatting marks shown, Word no longer shows a field code after every chapter title. The contents page is still a ready list, each line a link to its chapter, and Word fills in the page numbers when it updates the fields on opening
+
+**License messages**
+- License checks are more robust. When a license cannot be confirmed, the message says why in plain words, with a short code for support, and a "Copy diagnostics" button (on the license screen and in Settings, License diagnostics) copies the details to paste into a support message, never your keys
+- BookyAI keeps working offline for up to 30 days after its last successful license check
+- After updating to this version, add-ons (such as the Activity Studio studios) need the app to be online once to confirm the license
+
+**Fixes and smaller improvements**
+- Activity Studio: with "Puzzles and solutions in separate files" in the printable edition, "Solution on page N" in Sudoku and Mazes books pointed at the page in the whole book, not in the solutions file. It now points at the right page of the solutions file, as it does in the new studios
+- "Plan my book with me" now plans a collection as standalone stories, as you asked, instead of one continuous book
+
 ## 1.9.24 — 2026-10-19
 
 **Chapters now reach the length you ask for**
